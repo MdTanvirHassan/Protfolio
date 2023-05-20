@@ -10,15 +10,17 @@
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous" />
-      <!-- font awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-      <!-- custom css -->
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <img class="banner-img" src="./image/bg_1.jpg" alt="banner" />
-    
-    <!-- Navbar -->
+
+    <!--//! Navbar -->
     <nav class="navbar bg-header navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand fs-3 fw-bold text-white" href="/">Tanvir</a>
@@ -62,9 +64,9 @@
         </div>
       </div>
     </nav>
-    <!-- Navbar -->
+    <!--//* Navbar END-->
 
-    <!-- Banner -->
+    <!-- //!Banner -->
     <section class="container banner">
       <div class="row">
         <!-- left-side -->
@@ -72,8 +74,8 @@
           <span class="bg-white fw-bold p-2 text-primary my-2">Hi There!</span>
           <h1 class="banner-title my-3">I am Tanvir</h1>
           <h1 class="banner-title my-3">A Web Designer</h1>
-          <span class="typewrite" data-period="2000" data-type='[ "A Web Designer", "A Developer", "I Love Design.", "I Love to Develop." ]'>
-            <span class="wrap"></span>
+          <!-- <span class="typewrite" data-period="2000" data-type='[ "A Web Designer", "A Developer", "I Love Design.", "I Love to Develop." ]'></span> -->
+          <!-- <span class="wrap"></span> -->
           <p class="my-4 fs-6">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.
@@ -82,12 +84,12 @@
             <button
               type="button"
               class="btn btn-primary py-3 mb-lg-0 mb-2 text-uppercase button-text me-3 px-4 fw-bold">
-              Hire Me <span class="fa fa-long-arrow-right">
+              Hire Me <span class="fa fa-long-arrow-right"></span>
             </button>
             <button
               type="button"
               class="btn btn-light text-primary py-3 text-uppercase button-text px-4 fw-bold">
-              View Portfolio <span class="fa fa-long-arrow-right">
+              View Portfolio <span class="fa fa-long-arrow-right"></span>
             </button>
           </div>
         </div>
@@ -95,9 +97,9 @@
         <div class="right-side col-sm-12 col-md-6"></div>
       </div>
     </section>
-    <!-- Banner -->
+    <!--//* Banner END-->
 
-    <!-- About -->
+    <!--//! About -->
     <section class="position-relative about" id="about">
       <div class="container">
         <div class="row">
@@ -344,7 +346,7 @@
       </div>
     </section>
     <!-- About-End -->
-    <!-- Services -->
+    <!-- //!Services -->
     <section class="services bg-white py-5" id="services">
       <div class="container">
         <div class="row justify-content-center">
@@ -366,7 +368,9 @@
             data-aos-delay="100"
             data-aos-duration="1000">
             <div class="services-2">
-              <div class="icon my-2"><span class="bg-primary text-white p-2">icon</span></div>
+              <div class="icon my-2">
+                <span class="bg-primary text-white p-2">icon</span>
+              </div>
               <div class="text">
                 <h5 class="text-primary py-2">UI &amp; UX Design</h5>
                 <p>
@@ -382,7 +386,7 @@
             </div>
           </div>
           <div
-            class="col-sm-12 px-4  col-md-3 d-flex align-items-stretch bg-white shadow-lg py-5 rounded"
+            class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-5 rounded"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1000">
@@ -410,7 +414,9 @@
             data-aos-delay="100"
             data-aos-duration="1000">
             <div class="services-2">
-              <div class="icon my-2"><span class="bg-primary text-white p-2">icon</span></div>
+              <div class="icon my-2">
+                <span class="bg-primary text-white p-2">icon</span>
+              </div>
               <div class="text">
                 <h5 class="text-primary py-2">Graphic Design</h5>
                 <p>
@@ -442,12 +448,13 @@
         </div>
       </div>
     </section>
-    <!-- counting -->
+    <!--//* Services-END-->
+    <!--//todo counting -->
     <section
-      class="img"
-      style="background-image: url(images/bg_3.jpg)">
-      <div class="overlay"></div>
-      <div class="container">
+      class="img py-5 position"
+      style="background-image: url(image/bg_3.jpg)">
+      <!-- <div class="overlay"></div> -->
+      <div class="container mx-auto">
         <div class="row section-counter">
           <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
             <div
@@ -464,7 +471,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
+          <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-center">
             <div
               class="counter-wrap-2 d-flex"
               data-aos="fade-up"
@@ -473,7 +480,8 @@
               <div class="icon">
                 <span class="flaticon-complete"></span>
               </div>
-              <div class="text">
+              <div
+                class="text align-items-center justify-content-center text-center">
                 <h2 class="number"><span class="countup">320</span></h2>
                 <span class="caption">Project Completed</span>
               </div>
@@ -497,10 +505,332 @@
         </div>
       </div>
     </section>
-    <!-- Services-END-->
-    <!-- Portfolio -->
+    <!-- //*Counting End -->
+    <!--//todo Portfolio -->
+    <section id="portfolio" class="portfolio bg-white py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-md-7 heading-section text-center mb-5"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+            <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
+              Portfolio
+            </h6>
+            <h2 class="mb-4">My Latest Work</h2>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div class="">
+              <img
+                src="image/project-1.jpg"
+                alt=""
+                width="100%"
+                height="100%"
+                class="project-img" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div class="">
+              <img
+                src="image/project-3.jpg"
+                alt=""
+                width="100%"
+                height="100%"
+                class="project-img" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div class="">
+              <img
+                src="image/project-4.jpg"
+                alt=""
+                width="100%"
+                height="100%"
+                class="project-img" />
+            </div>
+          </div>
 
-    <!-- Portfolio End -->
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div class="">
+              <img
+                src="image/project-1.jpg"
+                alt=""
+                width="100%"
+                height="100%"
+                class="project-img" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div class="">
+              <img
+                src="image/project-3.jpg"
+                alt=""
+                width="100%"
+                height="100%"
+                class="project-img" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 mb-4">
+            <div class="">
+              <img
+                src="image/project-4.jpg"
+                alt=""
+                width="100%"
+                height="100%"
+                class="project-img" />
+            </div>
+          </div>
+
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <!--//* Portfolio End -->
+    <!-- Testimonial -->
+    <!-- Testimonial End-->
+    <!--//todo Blog -->
+
+    <section class="bg-light" id="blog">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div
+            class="col-md-7 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+            <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
+              Our Blog
+            </h6>
+            <h2 class="mb-4">Recent From Blog</h2>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 d-flex mb-5">
+            <div class="blog-entry justify-content-end">
+              <img
+                src="image/image_1.jpg"
+                alt="blog"
+                class="block-20 blog-img"
+                width="100%" />
+              <div class="bg-white p-4">
+                <p class="meta text-decoration-none text-secondary">
+                  <span>
+                    <i class="fa fa-calendar me-1 text-primary"></i>
+                    Jan. 18,
+                    2021</span>
+                  <span class="text-decoration-none text-primary">
+                    <a href="#" class="text-decoration-none">
+                      <i class="fa fa-comment me-1"></i>
+                      3 Comments
+                    </a>
+                  </span>
+                </p>
+                <h5 class="heading mb-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Tips About Creating A New Web Design</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex mb-5">
+            <div
+              class="blog-entry justify-content-end"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100">
+              <img
+                src="image/image_2.jpg"
+                alt="blog"
+                class="block-20 blog-img"
+                width="100%" />
+              <div class="bg-white p-4">
+                <p class="meta text-decoration-none text-secondary">
+                  <span>
+                    <i class="fa fa-calendar me-1 text-primary"></i>
+                    Jan. 18,
+                    2021</span>
+                  <span class="text-decoration-none text-primary">
+                    <a href="#" class="text-decoration-none">
+                      <i class="fa fa-comment me-1"></i>
+                      3 Comments
+                    </a>
+                  </span>
+                </p>
+                <h5 class="heading mb-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Tips About Creating A New Web Design</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex mb-5">
+            <div
+              class="blog-entry justify-content-end"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100">
+              <img
+                src="image/image_3.jpg"
+                alt="blog"
+                class="block-20 blog-img"
+                width="100%" />
+              <div class="bg-white p-4">
+                <p class="meta text-decoration-none text-secondary">
+                  <span>
+                    <i class="fa fa-calendar me-1 text-primary"></i>
+                    Jan. 18,
+                    2021</span>
+                  <span class="text-decoration-none text-primary">
+                    <a href="#" class="text-decoration-none">
+                      <i class="fa fa-comment me-1"></i>
+                      3 Comments
+                    </a>
+                  </span>
+                </p>
+                <h5 class="heading mb-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Tips About Creating A New Web Design</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex mb-5">
+            <div
+              class="blog-entry justify-content-end"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100">
+              <img
+                src="image/image_4.jpg"
+                alt="blog"
+                class="block-20 blog-img"
+                width="100%" />
+              <div class="bg-white p-4">
+                <p class="meta text-decoration-none text-secondary">
+                  <span>
+                    <i class="fa fa-calendar me-1 text-primary"></i>
+                    Jan. 18,
+                    2021</span>
+                  <span class="text-decoration-none text-primary">
+                    <a href="#" class="text-decoration-none">
+                      <i class="fa fa-comment me-1"></i>
+                      3 Comments
+                    </a>
+                  </span>
+                </p>
+                <h5 class="heading mb-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Tips About Creating A New Web Design</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex mb-5">
+            <div
+              class="blog-entry justify-content-end"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100">
+              <img
+                src="image/image_5.jpg"
+                alt="blog"
+                class="block-20 blog-img"
+                width="100%" />
+              <div class="bg-white p-4">
+                <p class="meta text-decoration-none text-secondary">
+                  <span>
+                    <i class="fa fa-calendar me-1 text-primary"></i>
+                    Jan. 18,
+                    2021</span>
+                  <span class="text-decoration-none text-primary">
+                    <a href="#" class="text-decoration-none">
+                      <i class="fa fa-comment me-1"></i>
+                      3 Comments
+                    </a>
+                  </span>
+                </p>
+                <h5 class="heading mb-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Tips About Creating A New Web Design</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex mb-5">
+            <div
+              class="blog-entry justify-content-end"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100">
+              <img
+                src="image/image_6.jpg"
+                alt="blog"
+                class="block-20 blog-img"
+                width="100%" />
+              <div class="bg-white p-4">
+                <p class="meta text-decoration-none text-secondary">
+                  <span>
+                    <i class="fa fa-calendar me-1 text-primary"></i>
+                    Jan. 18,
+                    2021</span>
+                  <span class="text-decoration-none text-primary">
+                    <a href="#" class="text-decoration-none">
+                      <i class="fa fa-comment me-1"></i>
+                      3 Comments
+                    </a>
+                  </span>
+                </p>
+                <h5 class="heading mb-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Tips About Creating A New Web Design</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--//* Blog END -->
+    <!-- Pricing -->
+    <!-- Pricing End-->
+    <!-- Contact -->
+    <!-- Contact -->
+    <!-- Footer -->
+    <!-- Footer -->
 
     <!-- //todo JAVAScript -->
 
