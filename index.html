@@ -10,10 +10,13 @@
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <script src="https://kit.fontawesome.com/07f87fa220.js" crossorigin="anonymous"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -70,7 +73,7 @@
     <section class="container banner">
       <div class="row">
         <!-- left-side -->
-        <div class="left-side col-sm-12 col-md-6 my-5">
+        <div class="left-side col-sm-12 col-md-6 my-5 heading-section">
           <span class="bg-white fw-bold p-2 text-primary my-2">Hi There!</span>
           <h1 class="banner-title my-3">I am Tanvir</h1>
           <h1 class="banner-title my-3">A Web Designer</h1>
@@ -114,7 +117,7 @@
           </div>
           <!-- Right content -->
           <div class="col-sm-12 col-md-6">
-            <div class="my-5">
+            <div class="my-5 heading-section">
               <!-- Tabs-start -->
               <ul class="nav nav-tabs about-tab" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -351,9 +354,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div
-            class="col-md-7 heading-section text-center mb-5"
-            data-aos="fade-up"
-            data-aos-duration="1000">
+            class="col-md-7 heading-section text-center mb-5">
             <h6 class="text-primary text-center my-2 mt-5">Services</h6>
             <h2 class="mb-4">
               This is My Expertise, The Services I'll Provide My Clients
@@ -363,13 +364,10 @@
         <!-- cards -->
         <div class="row gap-5 justify-content-center">
           <div
-            class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-5 rounded"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="1000">
-            <div class="services-2">
+            class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-4 rounded">
+            <div class="services-card">
               <div class="icon my-2">
-                <span class="bg-primary text-white p-2">icon</span>
+                <i class="fa-sharp fa-solid fa-code fs-1 bg-primary text-white rounded p-3"></i>
               </div>
               <div class="text">
                 <h5 class="text-primary py-2">UI &amp; UX Design</h5>
@@ -386,13 +384,10 @@
             </div>
           </div>
           <div
-            class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-5 rounded"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="1000">
-            <div class="services-2">
+            class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-4 rounded">
+            <div class="services-card">
               <div class="icon my-2">
-                <span class="bg-primary text-white p-2">icon</span>
+                <i class="fa-solid fa-rocket  fs-1 bg-primary text-white rounded p-3"></i>
               </div>
               <div class="text">
                 <h5 class="text-primary py-2">Web Development</h5>
@@ -409,13 +404,10 @@
             </div>
           </div>
           <div
-            class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-5 rounded"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="1000">
-            <div class="services-2">
+            class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-4 rounded">
+            <div class="services-card">
               <div class="icon my-2">
-                <span class="bg-primary text-white p-2">icon</span>
+                <i class="fa-sharp fa-solid fa-code fs-1 bg-primary text-white rounded p-3"></i>
               </div>
               <div class="text">
                 <h5 class="text-primary py-2">Graphic Design</h5>
@@ -433,7 +425,7 @@
           </div>
         </div>
         <div class="row mt-5 justify-content-center">
-          <div class="col-md-8">
+          <div class="col-md-8 heading-section">
             <p>
               <strong
                 >Have any works you want to done by me?
@@ -506,14 +498,12 @@
       </div>
     </section>
     <!-- //*Counting End -->
-    <!--//todo Portfolio -->
+    <!--//! Portfolio -->
     <section id="portfolio" class="portfolio bg-white py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div
-            class="col-md-7 heading-section text-center mb-5"
-            data-aos="fade-up"
-            data-aos-duration="1000">
+            class="col-md-7 heading-section text-center mb-5">
             <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
               Portfolio
             </h6>
@@ -521,84 +511,158 @@
           </div>
         </div>
         <!-- cards -->
-        <div class="row">
+        <div class="row project-card">
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="">
+            <div class="work  project-card">
               <img
                 src="image/project-1.jpg"
-                alt=""
+                alt="project"
                 width="100%"
                 height="100%"
                 class="project-img" />
+                <div class="layer-content">
+                  <h5 class="text-center">Branding & Illustration Design</h5>
+                  <h6 class="text-center text-uppercase">Web Design </h6>
+                </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="">
+            <div class="work  project-card">
               <img
                 src="image/project-3.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
+                <div class="layer-content">
+                  <h5 class="text-center">Branding & Illustration Design</h5>
+                  <h6 class="text-center text-uppercase">Web Design </h6>
+                </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="">
+            <div class="work  project-card">
               <img
                 src="image/project-4.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
+                <div class="layer-content">
+                  <h5 class="text-center">Branding & Illustration Design</h5>
+                  <h6 class="text-center text-uppercase">Web Design </h6>
+                </div>
             </div>
           </div>
 
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="">
+            <div class="work  project-card">
               <img
                 src="image/project-1.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
+                <div class="layer-content">
+                  <h5 class="text-center">Branding & Illustration Design</h5>
+                  <h6 class="text-center text-uppercase">Web Design </h6>
+                </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="">
+            <div class="work  project-card">
               <img
                 src="image/project-3.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
+                <div class="layer-content">
+                  <h5 class="text-center">Branding & Illustration Design</h5>
+                  <h6 class="text-center text-uppercase">Web Design </h6>
+                </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="">
+            <div class="work  project-card">
               <img
                 src="image/project-4.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
+                <div class="layer-content">
+                  <h5 class="text-center">Branding & Illustration Design</h5>
+                  <h6 class="text-center text-uppercase">Web Design </h6>
+                </div>
             </div>
           </div>
 
-          <!-- </div> -->
+          
         </div>
       </div>
     </section>
     <!--//* Portfolio End -->
-    <!-- Testimonial -->
+    <!--//todo Testimonial -->
+    <section class="testimonial bg-light py-5" id="testimonial">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div
+            class="col-md-7 text-center heading-section"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+            <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
+              TESTIMONIAL
+            </h6>
+            <h2 class="mb-3">Our Successful Students </span></h2>
+          </div>
+        </div>
+
+        <!-- slider -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider">
+                <img src="image/person_1.jpg" alt="person" class="slider-img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider">
+                <img src="image/person_2.jpg" alt="person" class="slider-img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider">
+                <img src="image/person_3.jpg" alt="person" class="slider-img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider">
+                <img src="image/person_1.jpg" alt="person" class="slider-img">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider">
+                <img src="image/person_2.jpg" alt="person" class="slider-img">
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div> -->
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+
+    </section>
     <!-- Testimonial End-->
     <!--//todo Blog -->
     <section class="bg-light" id="blog">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div
-            class="col-md-7 text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000">
+            class="col-md-7 text-center heading-section">
             <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
               Our Blog
             </h6>
@@ -608,7 +672,7 @@
         <!-- card -->
         <div class="row justify-content-center">
           <div class="col-md-6 d-flex mb-5">
-            <div class="blog-entry justify-content-end">
+            <div class=" blog-card justify-content-end">
               <img
                 src="image/image_1.jpg"
                 alt="blog"
@@ -641,7 +705,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class="blog-entry justify-content-end"
+              class=" blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -677,7 +741,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class="blog-entry justify-content-end"
+              class=" blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -713,7 +777,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class="blog-entry justify-content-end"
+              class=" blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -749,7 +813,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class="blog-entry justify-content-end"
+              class=" blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -785,7 +849,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class="blog-entry justify-content-end"
+              class=" blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -828,9 +892,7 @@
       <div class="container">
         <div class="row justify-content-center pb-5">
           <div
-            class="col-md-7 text-center heading-section"
-            data-aos="fade-up"
-            data-aos-duration="1000">
+            class="col-md-7 text-center heading-section">
             <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
               My Pricing
             </h6>
@@ -839,10 +901,7 @@
         </div>
         <div class="row">
           <div
-            class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100">
+            class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4 price-card" >
             <div class="block-7">
               <div class="text-center">
                 <h6 class="text-primary text-uppercase d-block">Basic Plan</h6>
@@ -866,10 +925,7 @@
             </div>
           </div>
           <div
-            class="col-md-3 bg-white py-4 rounded mx-lg-5 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100">
+            class="col-md-3 bg-white py-4 rounded mx-lg-5 mb-4 price-card">
             <div class="block-7">
               <div class="text-center">
                 <h6 class="text-primary text-uppercase d-block">
@@ -895,10 +951,7 @@
             </div>
           </div>
           <div
-            class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100">
+            class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4 price-card">
             <div class="block-7">
               <div class="text-center">
                 <h6 class="text-primary text-uppercase d-block">
@@ -930,11 +983,11 @@
     <!--//todo Contact -->
     <section class="bg-light" id="contact">
       <div class="container">
-        <div class="row no-gutters justify-content-center">
+        <div class="row  justify-content-center">
           <div class="col-md-12">
             <div class="wrapper">
               <div class="row g-0">
-                <div class="col-lg-6 order-lg-last">
+                <div class="col-lg-6 order-lg-last heading-section">
                   <div class="contact-wrap w-100 p-md-5 p-4">
                     <h3>Contact us</h3>
                     <p class="mb-4 text-secondary">
@@ -1043,7 +1096,7 @@
                         </div>
                       </div>
                     </form>
-                    <div class="w-100 social-media mt-5">
+                    <div class="w-100 social-media mt-5 heading-section>
                       <h3>Follow me here</h3>
                       <p class="fw-bold">
                         <a href="#" class="text-decoration-none">Facebook</a>
@@ -1076,7 +1129,7 @@
         <div class="row d-flex justify-content-center">
           <div class="col-lg-12">
             <div class="row g-lg-5">
-              <div class="col-md-8 text-lg-right">
+              <div class="col-md-8 text-lg-right heading-section">
                 <h2 class="mb-0">Have any works you want to done by me?</h2>
                 <p>Far far away, behind the word mountains</p>
               </div>
@@ -1224,8 +1277,19 @@
         }
       });
     </script>
+    <!--scroll reveal  -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- bootstrap5 -->
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="js/swiper.js"></script>
+
+    <!-- bootstrap5 js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -1238,6 +1302,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"></script>
-    <!-- bootstrap5 -->
+    <!-- bootstrap5 js end-->
   </body>
 </html>
