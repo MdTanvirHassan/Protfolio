@@ -10,15 +10,27 @@
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous" />
+
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-      <script src="https://kit.fontawesome.com/07f87fa220.js" crossorigin="anonymous"></script>
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/07f87fa220.js"
+      crossorigin="anonymous"></script>
+
+      <!-- Jquary -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css" />
+
   </head>
   <body>
     <img class="banner-img" src="./image/bg_1.jpg" alt="banner" />
@@ -38,8 +50,8 @@
           <span class="navbar-toggler-icon text-white"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <span class="mx-lg-auto"></span>
+          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
             <li class="nav-item px-2">
               <a class="nav-link nav-text active" aria-current="page" href="#"
                 >Home</a
@@ -76,9 +88,9 @@
         <div class="left-side col-sm-12 col-md-6 my-5 heading-section">
           <span class="bg-white fw-bold p-2 text-primary my-2">Hi There!</span>
           <h1 class="banner-title my-3">I am Tanvir</h1>
-          <h1 class="banner-title my-3">A Web Designer</h1>
-          <!-- <span class="typewrite" data-period="2000" data-type='[ "A Web Designer", "A Developer", "I Love Design.", "I Love to Develop." ]'></span> -->
-          <!-- <span class="wrap"></span> -->
+          <h1 class="banner-title my-3">
+            <span class="multi-text"></span>
+          </h1>
           <p class="my-4 fs-6">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.
@@ -103,15 +115,15 @@
     <!--//* Banner END-->
 
     <!--//! About -->
-    <section class="position-relative about" id="about">
+    <section class="position-relative about py-5 bg-light" id="about">
       <div class="container">
         <div class="row">
           <!-- left content -->
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 px-5">
             <img
               src="./image/about.jpg"
               alt="about"
-              class="about-img"
+              class="about-img px-5"
               width="100%"
               height="100%" />
           </div>
@@ -349,12 +361,12 @@
       </div>
     </section>
     <!-- About-End -->
+
     <!-- //!Services -->
     <section class="services bg-white py-5" id="services">
       <div class="container">
         <div class="row justify-content-center">
-          <div
-            class="col-md-7 heading-section text-center mb-5">
+          <div class="col-md-7 heading-section text-center mb-5">
             <h6 class="text-primary text-center my-2 mt-5">Services</h6>
             <h2 class="mb-4">
               This is My Expertise, The Services I'll Provide My Clients
@@ -367,7 +379,8 @@
             class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-4 rounded">
             <div class="services-card">
               <div class="icon my-2">
-                <i class="fa-sharp fa-solid fa-code fs-1 bg-primary text-white rounded p-3"></i>
+                <i
+                  class="fa-sharp fa-solid fa-code fs-1 bg-primary text-white rounded p-3"></i>
               </div>
               <div class="text">
                 <h5 class="text-primary py-2">UI &amp; UX Design</h5>
@@ -387,7 +400,8 @@
             class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-4 rounded">
             <div class="services-card">
               <div class="icon my-2">
-                <i class="fa-solid fa-rocket  fs-1 bg-primary text-white rounded p-3"></i>
+                <i
+                  class="fa-solid fa-rocket fs-1 bg-primary text-white rounded p-3"></i>
               </div>
               <div class="text">
                 <h5 class="text-primary py-2">Web Development</h5>
@@ -407,7 +421,8 @@
             class="col-sm-12 px-4 col-md-3 d-flex align-items-stretch bg-white shadow-lg py-4 rounded">
             <div class="services-card">
               <div class="icon my-2">
-                <i class="fa-sharp fa-solid fa-code fs-1 bg-primary text-white rounded p-3"></i>
+                <i
+                  class="fa-sharp fa-solid fa-code fs-1 bg-primary text-white rounded p-3"></i>
               </div>
               <div class="text">
                 <h5 class="text-primary py-2">Graphic Design</h5>
@@ -441,69 +456,65 @@
       </div>
     </section>
     <!--//* Services-END-->
+
     <!--//todo counting -->
     <section
-      class="img py-5 position"
+      class="img"
       style="background-image: url(image/bg_3.jpg)">
-      <!-- <div class="overlay"></div> -->
+      <div class="overlay py-5">
       <div class="container mx-auto">
         <div class="row section-counter">
           <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
             <div
-              class="counter-wrap-2 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000">
-              <div class="icon">
-                <span class="flaticon-customer-review"></span>
+              class="counter-wrap d-flex">
+              <div class="icon mx-2">
+                <i
+                  class="fa-sharp fa-solid fa-code fs-1 text-white"></i>
               </div>
               <div class="text">
-                <h2 class="number"><span class="countup">3000</span></h2>
+                <h2 class="number"><span class="counter" data-val="3000">3000</span></h2>
                 <span class="caption">Happy Customer</span>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-center">
             <div
-              class="counter-wrap-2 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1000">
-              <div class="icon">
-                <span class="flaticon-complete"></span>
+              class="counter-wrap d-flex">
+              <div class="icon mx-2">
+                <i
+                  class="fa-sharp fa-solid fa-code fs-1 text-white"></i>
               </div>
               <div
                 class="text align-items-center justify-content-center text-center">
-                <h2 class="number"><span class="countup">320</span></h2>
+                <h2 class="number"><span class="counter" data-val="320">320</span></h2>
                 <span class="caption">Project Completed</span>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 d-flex align-items-stretch">
             <div
-              class="counter-wrap-2 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="1000">
-              <div class="icon">
-                <span class="flaticon-coffee"></span>
+              class="counter-wrap d-flex">
+              <div class="icon mx-2">
+                <i
+                  class="fa-sharp fa-solid fa-code fs-1 text-white"></i>
               </div>
               <div class="text">
-                <h2 class="number"><span class="countup">1000</span></h2>
+                <h2 class="number"><span class="counter" data-val="1000">1000</span></h2>
                 <span class="caption">Cups of Coffee</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </section>
     <!-- //*Counting End -->
+
     <!--//! Portfolio -->
     <section id="portfolio" class="portfolio bg-white py-5">
       <div class="container">
         <div class="row justify-content-center">
-          <div
-            class="col-md-7 heading-section text-center mb-5">
+          <div class="col-md-7 heading-section text-center mb-5">
             <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
               Portfolio
             </h6>
@@ -513,96 +524,95 @@
         <!-- cards -->
         <div class="row project-card">
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="work  project-card">
+            <div class="work project-card">
               <img
                 src="image/project-1.jpg"
                 alt="project"
                 width="100%"
                 height="100%"
                 class="project-img" />
-                <div class="layer-content">
-                  <h5 class="text-center">Branding & Illustration Design</h5>
-                  <h6 class="text-center text-uppercase">Web Design </h6>
-                </div>
+              <div class="layer-content">
+                <h5 class="text-center">Branding & Illustration Design</h5>
+                <h6 class="text-center text-uppercase">Web Design</h6>
+              </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="work  project-card">
+            <div class="work project-card">
               <img
                 src="image/project-3.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
-                <div class="layer-content">
-                  <h5 class="text-center">Branding & Illustration Design</h5>
-                  <h6 class="text-center text-uppercase">Web Design </h6>
-                </div>
+              <div class="layer-content">
+                <h5 class="text-center">Branding & Illustration Design</h5>
+                <h6 class="text-center text-uppercase">Web Design</h6>
+              </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="work  project-card">
+            <div class="work project-card">
               <img
                 src="image/project-4.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
-                <div class="layer-content">
-                  <h5 class="text-center">Branding & Illustration Design</h5>
-                  <h6 class="text-center text-uppercase">Web Design </h6>
-                </div>
+              <div class="layer-content">
+                <h5 class="text-center">Branding & Illustration Design</h5>
+                <h6 class="text-center text-uppercase">Web Design</h6>
+              </div>
             </div>
           </div>
 
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="work  project-card">
+            <div class="work project-card">
               <img
                 src="image/project-1.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
-                <div class="layer-content">
-                  <h5 class="text-center">Branding & Illustration Design</h5>
-                  <h6 class="text-center text-uppercase">Web Design </h6>
-                </div>
+              <div class="layer-content">
+                <h5 class="text-center">Branding & Illustration Design</h5>
+                <h6 class="text-center text-uppercase">Web Design</h6>
+              </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="work  project-card">
+            <div class="work project-card">
               <img
                 src="image/project-3.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
-                <div class="layer-content">
-                  <h5 class="text-center">Branding & Illustration Design</h5>
-                  <h6 class="text-center text-uppercase">Web Design </h6>
-                </div>
+              <div class="layer-content">
+                <h5 class="text-center">Branding & Illustration Design</h5>
+                <h6 class="text-center text-uppercase">Web Design</h6>
+              </div>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 mb-4">
-            <div class="work  project-card">
+            <div class="work project-card">
               <img
                 src="image/project-4.jpg"
                 alt=""
                 width="100%"
                 height="100%"
                 class="project-img" />
-                <div class="layer-content">
-                  <h5 class="text-center">Branding & Illustration Design</h5>
-                  <h6 class="text-center text-uppercase">Web Design </h6>
-                </div>
+              <div class="layer-content">
+                <h5 class="text-center">Branding & Illustration Design</h5>
+                <h6 class="text-center text-uppercase">Web Design</h6>
+              </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
     <!--//* Portfolio End -->
+
     <!--//todo Testimonial -->
     <section class="testimonial bg-light py-5" id="testimonial">
       <div class="container">
@@ -614,7 +624,7 @@
             <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
               TESTIMONIAL
             </h6>
-            <h2 class="mb-3">Our Successful Students </span></h2>
+            <h2 class="mb-3">Our Successful Students</h2>
           </div>
         </div>
 
@@ -623,27 +633,27 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="slider">
-                <img src="image/person_1.jpg" alt="person" class="slider-img">
+                <img src="image/person_1.jpg" alt="person" class="slider-img" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slider">
-                <img src="image/person_2.jpg" alt="person" class="slider-img">
+                <img src="image/person_2.jpg" alt="person" class="slider-img" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slider">
-                <img src="image/person_3.jpg" alt="person" class="slider-img">
+                <img src="image/person_3.jpg" alt="person" class="slider-img" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slider">
-                <img src="image/person_1.jpg" alt="person" class="slider-img">
+                <img src="image/person_1.jpg" alt="person" class="slider-img" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slider">
-                <img src="image/person_2.jpg" alt="person" class="slider-img">
+                <img src="image/person_2.jpg" alt="person" class="slider-img" />
               </div>
             </div>
             <!-- <div class="swiper-slide">Slide 6</div>
@@ -654,15 +664,14 @@
           <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
-
     </section>
     <!-- Testimonial End-->
+
     <!--//todo Blog -->
     <section class="bg-light" id="blog">
       <div class="container">
         <div class="row justify-content-center mb-5">
-          <div
-            class="col-md-7 text-center heading-section">
+          <div class="col-md-7 text-center heading-section">
             <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
               Our Blog
             </h6>
@@ -672,7 +681,7 @@
         <!-- card -->
         <div class="row justify-content-center">
           <div class="col-md-6 d-flex mb-5">
-            <div class=" blog-card justify-content-end">
+            <div class="blog-card justify-content-end">
               <img
                 src="image/image_1.jpg"
                 alt="blog"
@@ -705,7 +714,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class=" blog-card justify-content-end"
+              class="blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -741,7 +750,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class=" blog-card justify-content-end"
+              class="blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -777,7 +786,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class=" blog-card justify-content-end"
+              class="blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -813,7 +822,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class=" blog-card justify-content-end"
+              class="blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -849,7 +858,7 @@
           </div>
           <div class="col-md-6 d-flex mb-5">
             <div
-              class=" blog-card justify-content-end"
+              class="blog-card justify-content-end"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
@@ -887,12 +896,12 @@
       </div>
     </section>
     <!--//* Blog END -->
+
     <!--//! Pricing -->
     <section class="bg-light py-5" id="pricing">
       <div class="container">
         <div class="row justify-content-center pb-5">
-          <div
-            class="col-md-7 text-center heading-section">
+          <div class="col-md-7 text-center heading-section">
             <h6 class="text-primary text-center my-2 mt-5 text-uppercase">
               My Pricing
             </h6>
@@ -900,8 +909,7 @@
           </div>
         </div>
         <div class="row">
-          <div
-            class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4 price-card" >
+          <div class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4 price-card">
             <div class="block-7">
               <div class="text-center">
                 <h6 class="text-primary text-uppercase d-block">Basic Plan</h6>
@@ -924,8 +932,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="col-md-3 bg-white py-4 rounded mx-lg-5 mb-4 price-card">
+          <div class="col-md-3 bg-white py-4 rounded mx-lg-5 mb-4 price-card">
             <div class="block-7">
               <div class="text-center">
                 <h6 class="text-primary text-uppercase d-block">
@@ -950,8 +957,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4 price-card">
+          <div class="col-md-3 bg-white py-4 rounded mx-lg-4 mb-4 price-card">
             <div class="block-7">
               <div class="text-center">
                 <h6 class="text-primary text-uppercase d-block">
@@ -980,10 +986,11 @@
       </div>
     </section>
     <!-- Pricing End-->
+
     <!--//todo Contact -->
     <section class="bg-light" id="contact">
       <div class="container">
-        <div class="row  justify-content-center">
+        <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="wrapper">
               <div class="row g-0">
@@ -1097,26 +1104,25 @@
                       </div>
                     </form>
                     <div class="w-100 social-media mt-5 heading-section>
-                      <h3>Follow me here</h3>
-                      <p class="fw-bold">
-                        <a href="#" class="text-decoration-none">Facebook</a>
-                        <a href="#" class="text-decoration-none">Twitter</a>
-                        <a href="#" class="text-decoration-none">Instagram</a>
-                        <a href="#" class="text-decoration-none">Dribbble</a>
-                      </p>
-                    </div>
+                    <h3>Follow me here</h3>
+                    <p class="fw-bold">
+                      <a href="#" class="text-decoration-none">Facebook</a>
+                      <a href="#" class="text-decoration-none">Twitter</a>
+                      <a href="#" class="text-decoration-none">Instagram</a>
+                      <a href="#" class="text-decoration-none">Dribbble</a>
+                    </p>
                   </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-stretch">
-                  <div id="map" class="bg-light">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.75486422773!2d90.37336047434526!3d23.827314485821134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a7d95eb9f1%3A0xa21e5e7f4e093a63!2s4axiz%20IT%20Ltd!5e0!3m2!1sen!2sbd!4v1684608713792!5m2!1sen!2sbd"
-                      class="map"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-stretch">
+                <div id="map" class="bg-light">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.75486422773!2d90.37336047434526!3d23.827314485821134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a7d95eb9f1%3A0xa21e5e7f4e093a63!2s4axiz%20IT%20Ltd!5e0!3m2!1sen!2sbd!4v1684608713792!5m2!1sen!2sbd"
+                    class="map"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>
@@ -1148,8 +1154,9 @@
       </div>
     </section>
     <!--//* Contact -->
+
     <!--//todo Footer -->
-    <footer class="bg-light py-5">
+    <footer class="bg-light pt-5">
       <div class="container">
         <div class="row mb-5 justify-content-between">
           <div class="col-md-6 col-lg-4">
@@ -1163,13 +1170,13 @@
               </p>
               <ul class="d-flex list-unstyled mt-2">
                 <li class="mx-2">
-                  <a href="#"><span class="fa fa-twitter"></span></a>
+                  <a href="#" class="bg-primary p-2 social-icon"><span class="fa fa-twitter fs-3 text-white "></span></a>
                 </li>
                 <li class="mx-2">
-                  <a href="#"><span class="fa fa-facebook"></span></a>
+                  <a href="#" class="bg-primary p-2 social-icon"><span class="fa fa-facebook fs-3 text-white "></span></a>
                 </li>
                 <li class="mx-2">
-                  <a href="#"><span class="fa fa-instagram"></span></a>
+                  <a href="#" class="bg-primary p-2 social-icon"><span class="fa fa-instagram fs-3 text-white "></span></a>
                 </li>
               </ul>
             </div>
@@ -1242,7 +1249,7 @@
         </div>
       </div>
       <!-- //!lower-Footer -->
-      <div class="container-fluid px-0 py-5 bg-light">
+      <div class="container-fluid px-0 py-5 footer-bg">
         <div class="container-xl">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -1254,7 +1261,7 @@
                 </script>
                 All rights reserved | This template is made with
                 <i class="fa fa-heart color-danger" aria-hidden="true"></i> by
-                <a href="/" target="_blank" rel="nofollow noopener">Colorlib</a>
+                <a href="/" target="_blank" class="text-decoration-none">Colorlib</a>
               </p>
             </div>
           </div>
@@ -1263,7 +1270,7 @@
     </footer>
     <!-- //*Footer -->
 
-    <!-- //todo JAVAScript -->
+    <!-- //todo =================JAVAScript==================== -->
 
     <!-- navbar scroll script -->
     <script>
@@ -1278,16 +1285,28 @@
       });
     </script>
     <!--scroll reveal  -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- custom js -->
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--//! custom js -->
     <script src="js/script.js"></script>
 
-    <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1200
+        });
+      });
+    </script>
 
-  <!-- Initialize Swiper -->
-  <script src="js/swiper.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="js/swiper.js"></script>
 
     <!-- bootstrap5 js -->
     <script

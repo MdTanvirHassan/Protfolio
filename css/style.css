@@ -30,7 +30,7 @@ h1,h2, h3, h4, h5, h6 {
   outline: 0 !important;
 }
 
-/* Navbar */
+/* //todo -----Navbar------ */
 
 .nav-text {
   color: #cbe2f8 !important;
@@ -52,7 +52,7 @@ h1,h2, h3, h4, h5, h6 {
   background-color: #0779e4 !important;
 }
 
-/* Banner */
+/* //!------Banner-------- */
 .banner {
   color: #ffffff;
   margin-top: 10%;
@@ -66,8 +66,6 @@ h1,h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   z-index: -1;
-  /* filter: brightness(0.1); */
-  /* background-image: linear-gradient(to right, #5FA7EE , #53A0EA); */
 }
 .banner-title {
   font-size: 60px !important;
@@ -96,7 +94,7 @@ h1,h2, h3, h4, h5, h6 {
 }
 /* Banner-end */
 
-/* About */
+/* //todo--------About--------- */
 .about {
   background-color: #f8f8f8 !important;
   color: #0000 !important;
@@ -112,17 +110,39 @@ h1,h2, h3, h4, h5, h6 {
 }
 .about-img {
   background-image: url("../image/about.jpg") no-repeat center;
-  /* scale:calc(2.1); */
   background-position: center;
   object-fit: fill;
   object-position: center;
   width: 100%;
   height: 100%;
 }
-/*//* portfolio */
+.about-img:hover{
+  transform: scale(1.1);
+}
+
+/* //todo--------Services -----------*/
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(7, 121, 228,0.7)!important;
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/* //todo---------counter--------- */
+.counter-wrap{
+  color: #ffffff;
+  font-weight: bold;
+}
+.counter-wrap .icon{
+  margin: auto;
+}
+
+/*//!-------- portfolio----- */
 .project-img {
   width: 100%;
-  /* height: 100%; */
 }
 .work{
   width: 100%;
@@ -157,16 +177,15 @@ h1,h2, h3, h4, h5, h6 {
 .work:hover .layer-content{
   height: 100%;
 }
-/* Testimonial */
+/* //todo --------Testimonial --------*/
 .slider-img{
   width: 350px;
-
 }
 .swiper {
   width: 100%;
   height: 100%;
 }
-
+/* swiper js */
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -182,7 +201,7 @@ h1,h2, h3, h4, h5, h6 {
   height: 100%;
   object-fit: cover;
 }
-/* Blog */
+/* //!------------- Blog--------- */
 .blog-img {
   height: 50vh;
   width: 100%;
@@ -200,7 +219,7 @@ h1,h2, h3, h4, h5, h6 {
   opacity: 0.6;
 }
 
-/* Contact */
+/* //!-------- Contact -------*/
 .map {
   width: 600px;
   height: 600px;
@@ -211,4 +230,16 @@ h1,h2, h3, h4, h5, h6 {
     height: 100%;
     margin: auto;
   }
+}
+
+/* //* ----Footer-------- */
+.footer-bg{
+  background-color: rgb(0, 0, 0,0.1);
+}
+.social-icon{
+  border-radius: 50%!important;
+  margin: auto;
+}
+.social-icon:hover{
+  background-color: aqua!important;
 }
